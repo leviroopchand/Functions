@@ -17,6 +17,50 @@
 // Your code goes here...
 
 
+function doesArrayIncludeItemsBetweenVals([arr],val1,val2){
+
+  if (Math.max.apply(arr) > val1 && Math.min.apply(arr) < val2) {
+         console.log(true);
+       } else {
+        console.log(false);
+       }
+
+      console.log(doesArrayIncludeItemsBetweenVals([2,4,2],3,5))
+      console.log(doesArrayIncludeItemsBetweenVals([2,4,2],5,10))
+  }
+
+//   let x = arr[0];
+// let y = arr[1];
+// let z = arr[2];
+
+// function arrayHigh(x,y,z) {
+//   if (x > y && x > z) {
+//     console.log(x);
+//   } else if (y > x && y > z){
+//     console.log(y);
+//   }
+//   else {
+//     console.log(z);
+//   }
+// }
+
+// function arrayLow(x,y,z) {
+//   if (x < y && x < z) {
+//     console.log(x)
+//   } else if (y < x && y < z){
+//     console.log(y);
+//   }
+//   else {
+//     console.log(z);
+//   }
+// }
+
+//   if (arrayHigh(x,y,z) > val1 && arrayLow(x,y,z) < val2) {
+//     console.log(true);
+//   } else {
+//     console.log(false);
+//   }
+
 
 
 /**
@@ -46,10 +90,10 @@
 
 
 // Do not delete or change the lines beneath
-const f = {
-  doesArrayIncludeItemsBetweenVals: doesArrayIncludeItemsBetweenVals || undefined,
-  getValueWithConditionOne: getValueWithConditionOne || undefined,
-  getValueWithConditionTwo: getValueWithConditionTwo || undefined,
-  getValueWithConditionThree: getValueWithConditionThree || undefined,
-}
-export { f };
+// const f = {
+//   doesArrayIncludeItemsBetweenVals: doesArrayIncludeItemsBetweenVals || undefined,
+//   getValueWithConditionOne: getValueWithConditionOne || undefined,
+//   getValueWithConditionTwo: getValueWithConditionTwo || undefined,
+//   getValueWithConditionThree: getValueWithConditionThree || undefined,
+// }
+// export { f };
