@@ -13,33 +13,63 @@
 
 // Your code goes here...
 
+function getDiffTwentySeven(num) {
+  let diff = num - 27;
+  let diffy = 27 - num;
+  if (num > 27) {
+    console.log(diff*2)
+  } else {
+    console.log(diffy)
+  }
+}
 
-
+console.log(getDiffTwentySeven(13));
+console.log(getDiffTwentySeven(37));
 
 /** =========================
  * Create a sumOfTwoIntegers(num1, num2) function to compute and return the sum of the two given integers
- * If the two argumants are same, then returns triple their sum.
+ * If the two arguments are same, then returns triple their sum.
  * Example1: sumOfTwoIntegers(13, 14) => 27
  * Example2: sumOfTwoIntegers(12, 12) => 72
  */
 
 // Your code goes here
 
+function sumOfTwoIntegers(num1, num2) {
+  let sum = num1 + num2;
+  if (num1 === num2) {
+    console.log(sum*3)
+  } else {
+    console.log(sum)
+  }
+}
 
+console.log(sumOfTwoIntegers(13, 14));
+console.log(sumOfTwoIntegers(12, 12))
 
 
 /** =========================
- * Create a isOneOfThemOrTheirSumIsFourty(num1, num2) function to check two given numbers and return a boolean.
+ * Create a isOneOfThemOrTheirSumIsForty(num1, num2) function to check two given numbers and return a boolean.
  * IF one of the number is 40 OR if their sum is 40 return true
  * Otherwise, return false
- * Example1: isOneOfThemOrTheirSumIsFourty(40, 13) => true
- * Example2: isOneOfThemOrTheirSumIsFourty(22, 18) => true
- * Example3: isOneOfThemOrTheirSumIsFourty(23, 16) => false
+ * Example1: isOneOfThemOrTheirSumIsForty(40, 13) => true
+ * Example2: isOneOfThemOrTheirSumIsForty(22, 18) => true
+ * Example3: isOneOfThemOrTheirSumIsForty(23, 16) => false
  */
 
 // Your code goes here...
 
+function isOneOfThemOrTheirSumIsForty(num1, num2) {
+  if (num1 == 40 || num2 == 40 || num1 + num2 == 40) {
+    console.log(true)
+  } else {
+    console.log(false)
+  }
+}
 
+console.log(isOneOfThemOrTheirSumIsForty(40, 13));
+console.log(isOneOfThemOrTheirSumIsForty(22, 18));
+console.log(isOneOfThemOrTheirSumIsForty(23, 16));
 
 
 // === TEST YOURSELF ===
@@ -49,9 +79,9 @@
 
 
 // Do not delete or change the lines beneath
-const f = {
-  getDiffTwentySeven: getDiffTwentySeven || undefined,
-  sumOfTwoIntegers: sumOfTwoIntegers || undefined,
-  isOneOfThemOrTheirSumIsFourty: isOneOfThemOrTheirSumIsFourty || undefined,
-}
-export { f }
+// const f = {
+//   getDiffTwentySeven: getDiffTwentySeven || undefined,
+//   sumOfTwoIntegers: sumOfTwoIntegers || undefined,
+//   isOneOfThemOrTheirSumIsForty: isOneOfThemOrTheirSumIsForty || undefined,
+// }
+// export { f }

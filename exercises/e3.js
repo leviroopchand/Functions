@@ -80,8 +80,45 @@ function doesArrayIncludeItemsBetweenVals([arr],val1,val2){
 
 // Your code goes here...
 
+function getValueWithConditionOne(x,y){
+  let sum = x+y;
+  if (sum == 40) {
+    return sum;
+  } else {
+    return sum * 2;
+  }
+}
+
+console.log(getValueWithConditionOne(22,18))
+console.log(getValueWithConditionOne(20,25))
 
 
+
+let getValueWithConditionTwo = (x,y) =>{
+  let sum = x+y;
+  if (sum == 40) {
+    return sum;
+  } else {
+    return sum * 2;
+  }
+}
+
+console.log(getValueWithConditionTwo(22,18))
+console.log(getValueWithConditionTwo(20,25))
+
+
+
+let getValueWithConditionThree = function (x,y){
+  let sum = x+y;
+  if (sum == 40) {
+    return sum;
+  } else {
+    return sum * 2;
+  }
+}
+
+console.log(getValueWithConditionThree(22,18))
+console.log(getValueWithConditionThree(20,25))
 
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-3"
