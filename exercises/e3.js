@@ -17,51 +17,15 @@
 // Your code goes here...
 
 
-function doesArrayIncludeItemsBetweenVals([arr],val1,val2){
-
-  if (Math.max.apply(arr) > val1 && Math.min.apply(arr) < val2) {
-         console.log(true);
-       } else {
-        console.log(false);
-       }
-
-      console.log(doesArrayIncludeItemsBetweenVals([2,4,2],3,5))
-      console.log(doesArrayIncludeItemsBetweenVals([2,4,2],5,10))
+function doesArrayIncludeItemsBetweenVals(arr,val1,val2){
+  for (let value of arr) {
+    if (value > val1 && value < val2) {
+      return true
+    } else {
+      return false
+    }
   }
-
-//   let x = arr[0];
-// let y = arr[1];
-// let z = arr[2];
-
-// function arrayHigh(x,y,z) {
-//   if (x > y && x > z) {
-//     console.log(x);
-//   } else if (y > x && y > z){
-//     console.log(y);
-//   }
-//   else {
-//     console.log(z);
-//   }
-// }
-
-// function arrayLow(x,y,z) {
-//   if (x < y && x < z) {
-//     console.log(x)
-//   } else if (y < x && y < z){
-//     console.log(y);
-//   }
-//   else {
-//     console.log(z);
-//   }
-// }
-
-//   if (arrayHigh(x,y,z) > val1 && arrayLow(x,y,z) < val2) {
-//     console.log(true);
-//   } else {
-//     console.log(false);
-//   }
-
-
+      }
 
 /**
  * ====================================================
@@ -81,44 +45,28 @@ function doesArrayIncludeItemsBetweenVals([arr],val1,val2){
 // Your code goes here...
 
 function getValueWithConditionOne(x,y){
-  let sum = x+y;
-  if (sum == 40) {
-    return sum;
+  if (x === 40 && y === 40) {
+    return x + y;
   } else {
-    return sum * 2;
+    return (x+y)*2;
   }
 }
-
-console.log(getValueWithConditionOne(22,18))
-console.log(getValueWithConditionOne(20,25))
-
-
 
 let getValueWithConditionTwo = (x,y) =>{
-  let sum = x+y;
-  if (sum == 40) {
-    return sum;
+  if (x === 40 && y === 40) {
+    return x + y;
   } else {
-    return sum * 2;
+    return (x+y)*2;
   }
 }
-
-console.log(getValueWithConditionTwo(22,18))
-console.log(getValueWithConditionTwo(20,25))
-
-
 
 let getValueWithConditionThree = function (x,y){
-  let sum = x+y;
-  if (sum == 40) {
-    return sum;
+  if (x === 40 && y === 40) {
+    return x + y;
   } else {
-    return sum * 2;
+    return (x+y)*2;
   }
 }
-
-console.log(getValueWithConditionThree(22,18))
-console.log(getValueWithConditionThree(20,25))
 
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-3"
@@ -127,10 +75,10 @@ console.log(getValueWithConditionThree(20,25))
 
 
 // Do not delete or change the lines beneath
-// const f = {
-//   doesArrayIncludeItemsBetweenVals: doesArrayIncludeItemsBetweenVals || undefined,
-//   getValueWithConditionOne: getValueWithConditionOne || undefined,
-//   getValueWithConditionTwo: getValueWithConditionTwo || undefined,
-//   getValueWithConditionThree: getValueWithConditionThree || undefined,
-// }
-// export { f };
+const f = {
+  doesArrayIncludeItemsBetweenVals: doesArrayIncludeItemsBetweenVals || undefined,
+  getValueWithConditionOne: getValueWithConditionOne || undefined,
+  getValueWithConditionTwo: getValueWithConditionTwo || undefined,
+  getValueWithConditionThree: getValueWithConditionThree || undefined,
+}
+export { f };

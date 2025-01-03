@@ -16,8 +16,6 @@ function rectArea(length, width) {
   return length * width;
 }
 
-console.log(rectArea(3,2))
-
 // Use the function you created above to calculate the areas of 3 rooms
 // Assign the results to room1, room2, and room3 variables
 // Data for calculation: room1: 4 by 6, room2: 13 by 3, room3: 4 by 8
@@ -27,10 +25,6 @@ console.log(rectArea(3,2))
 let room1 = rectArea(6,4);
 let room2 = rectArea(13,3);
 let room3 = rectArea(8,4)
-
-console.log(room1);
-console.log(room2);
-console.log(room3);
 
 /**
  * =============================================================
@@ -48,12 +42,10 @@ function totalRoomsArea(area1, area2, area3) {
   return area1 + area2 + area3;
 }
 
-console.log(totalRoomsArea(24,35,24))
-
 // Make the function call in the parentheses of the console.log statement.
 // Use room1, room2, room3 variables as arguments for the function call
 const result = function () {
-    console.log(totalRoomsArea(room1,room2,room3));
+    return totalRoomsArea(room1,room2,room3);
 }
 
 
@@ -64,10 +56,10 @@ const result = function () {
 
 
 // Do not delete or change the lines beneath
-// const f = {
-//     rectArea: rectArea || undefined,
-//     roomVars: [room1 || undefined, room2 || undefined, room3 || undefined],
-//     totalRoomsArea: totalRoomsArea || undefined,
-//     result: (room1 && room2 && room3) ? result : undefined,
-// }
-// export { f };
+const f = {
+    rectArea: rectArea || undefined,
+    roomVars: [room1 || undefined, room2 || undefined, room3 || undefined],
+    totalRoomsArea: totalRoomsArea || undefined,
+    result: (room1 && room2 && room3) ? result : undefined,
+}
+export { f };

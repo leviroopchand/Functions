@@ -16,10 +16,8 @@
 // Your code goes here
 
 function logMessage () {
-  console.log('Hello,World')
+  console.log('Hello, World')
 }
-
-console.log(logMessage())
 
 /**
  * =============================================================
@@ -38,8 +36,6 @@ function logMyMessage(message){
   console.log(message)
 }
 
-console.log(logMyMessage('I log my first message'))
-
 /**
  * ===============================================================
  * Create a  function that works as follows:
@@ -55,8 +51,6 @@ console.log(logMyMessage('I log my first message'))
 function logMessageWithMyName(name) {
   console.log('My name is ' + name + '!')
 }
-
-console.log(logMessageWithMyName('Levi'))
 
 /**
  * ==============================================================
@@ -75,8 +69,6 @@ function logMyInfo(name, age) {
   console.log('My name is ' + name + '. I am ' + age + ' years old!')
 }
 
-console.log(logMyInfo('Levi', 33))
-
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-1"
 // If the test has all tests passed, switch to the next exercise file
@@ -91,4 +83,4 @@ const f = {
   logMyInfo: logMyInfo || undefined
 }
 
-// export { f };
+export { f };

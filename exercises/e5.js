@@ -17,9 +17,9 @@ function getDiffTwentySeven(num) {
   let diff = num - 27;
   let diffy = 27 - num;
   if (num > 27) {
-    console.log(diff*2)
+    return (diff*2)
   } else {
-    console.log(diffy)
+    return diffy
   }
 }
 
@@ -38,9 +38,9 @@ console.log(getDiffTwentySeven(37));
 function sumOfTwoIntegers(num1, num2) {
   let sum = num1 + num2;
   if (num1 === num2) {
-    console.log(sum*3)
+    return (sum*3)
   } else {
-    console.log(sum)
+    return sum
   }
 }
 
@@ -61,9 +61,9 @@ console.log(sumOfTwoIntegers(12, 12))
 
 function isOneOfThemOrTheirSumIsForty(num1, num2) {
   if (num1 == 40 || num2 == 40 || num1 + num2 == 40) {
-    console.log(true)
+    return true
   } else {
-    console.log(false)
+    return false
   }
 }
 
@@ -79,9 +79,9 @@ console.log(isOneOfThemOrTheirSumIsForty(23, 16));
 
 
 // Do not delete or change the lines beneath
-// const f = {
-//   getDiffTwentySeven: getDiffTwentySeven || undefined,
-//   sumOfTwoIntegers: sumOfTwoIntegers || undefined,
-//   isOneOfThemOrTheirSumIsForty: isOneOfThemOrTheirSumIsForty || undefined,
-// }
-// export { f }
+const f = {
+  getDiffTwentySeven: getDiffTwentySeven || undefined,
+  sumOfTwoIntegers: sumOfTwoIntegers || undefined,
+  isOneOfThemOrTheirSumIsForty: isOneOfThemOrTheirSumIsForty || undefined,
+}
+export { f }

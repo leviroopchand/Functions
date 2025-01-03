@@ -91,10 +91,10 @@ console.log(logSecondsUpToMax(10))
 
 
 // Do not delete or change the lines beneath
-// const f = {
-//   splitFirstAndLastNames: splitFirstAndLastNames || undefined,
-//   personAge: personAge || undefined,
-//   isNameInArray: isNameInArray || undefined,
-//   logSecondsUpToMax: logSecondsUpToMax || undefined,
-// }
-// export { f }
+const f = {
+  splitFirstAndLastNames: splitFirstAndLastNames || undefined,
+  personAge: personAge || undefined,
+  isNameInArray: isNameInArray || undefined,
+  logSecondsUpToMax: logSecondsUpToMax || undefined,
+}
+export { f }
