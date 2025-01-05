@@ -17,7 +17,6 @@ let splitFirstAndLastNames = (str) => {
   return str.split(' ');
 }
 
-console.log(splitFirstAndLastNames('Levi Roopchand'))
 /** =========================
  * The personAge() constant is assigned to a function, that takes an object of person Data as the argument.
  * The function returns the value of the age property of the argument object
@@ -31,8 +30,6 @@ console.log(splitFirstAndLastNames('Levi Roopchand'))
 let personAge = (personObject) =>{
   return personObject.age;
 }
-
-console.log(personAge({nationality:'Trinidadian', name:'Levi', age:33}))
 
 /** =========================
  * The isNameInArray function takes an array and string of name as the arguments.
@@ -48,9 +45,6 @@ console.log(personAge({nationality:'Trinidadian', name:'Levi', age:33}))
 let isNameInArray = (arr, name) => {
   return arr.includes(name);
 }
-
-console.log(isNameInArray(['Jon', 'Michael', 'Andrey'], 'Michael'))
-console.log(isNameInArray(['Jon', 'Michael', 'Andrey'], 'James'))
 
 /** =========================
  * The logTimer function takes a number as the arguments.
@@ -81,8 +75,6 @@ let logSecondsUpToMax = (max) => {
     }
   }, 1000);
 }
-
-console.log(logSecondsUpToMax(10))
 
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-4"
