@@ -11,8 +11,6 @@
  * Example2: getDiffTwentySeven(37) => 20
  */
 
-// Your code goes here...
-
 function getDiffTwentySeven(num) {
   let diff = num - 27;
   let diffy = 27 - num;
